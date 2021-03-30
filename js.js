@@ -1,4 +1,4 @@
-function adder ( a, b ) {
+function adder( a, b ) {
   let sum = a + b;
   return sum;
 }

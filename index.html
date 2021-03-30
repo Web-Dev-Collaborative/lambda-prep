@@ -7,15 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+      div {
+        height: 128px;
+        /* Makes the div 128px in height */
+        width: 128px;
+        /* Makes the div 128px in width */
+        background: red;
+        /* Makes the div's background, red */
+      }
+
+    </style>
   </head>
 
   <body>
+    <!--HTML-->
+    <div id="me">Click me!</div>
+    <!--CSS-->
+
+    <!--JS-->
+
+    <iframe width="800" height="815" src="./readme/README.html"></iframe>
     <h1>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h1>
     <h2>hii</h2>
     <p>Hi World</p>
     <div class="container">
       <p>Hi World</p>
     </div>
+    <script async>
+      let count = 1;
+
+      document.getElementById( "me" ).addEventListener( "click", function () {
+
+
+        function setColor( me, color ) {
+          let property = document.getElementById( 'me' );
+          if ( count == 0 ) {
+            property.style.backgroundColor = "blue"
+            count = 1;
+          } else {
+            property.style.backgroundColor = "#7FFF00"
+            count = 0;
+          }
+        }
+        setColor();
+        document.getElementById( "me" ).innerHTML = 'click me again';
+      } );
+
+    </script>
   </body>
 
 </html>
