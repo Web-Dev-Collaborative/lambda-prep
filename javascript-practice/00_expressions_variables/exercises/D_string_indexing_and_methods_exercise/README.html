@@ -1,0 +1,93 @@
+<h1 id="intelligent-indexing">Intelligent Indexing</h1>
+<p>A string consists of one or more characters. An <em>index</em> is a number that corresponds to the position of a
+  character in a string. The first character of a string has <em>index 0</em>, the second character has <em>index
+    1</em>, and so on. <em>Indexing</em> is a pattern that programmers use often in strings. This pattern will also
+  appear later in more advanced applications.</p>
+<p>Before you start this exercise, make sure you have watched the lecture first.</p>
+<ul>
+  <li><a href="https://youtu.be/QoeKfd9MYWA">Lecture</a></li>
+</ul>
+<p>If you get stuck during this exercise, reference this walkthrough. Only watch enough of the walkthrough to get
+  yourself unstuck, then pause the video and pick up the exercise on your own.</p>
+<ul>
+  <li><a href="https://youtu.be/lXlNybyHclc">Walkthrough Part 1</a></li>
+  <li><a href="https://youtu.be/4sf1uP9OIDI">Walkthrough Part 2</a></li>
+</ul>
+<p>This is where we begin to unlock the basic programming patterns that you’ll always be able to rely on. Study them
+  closely.</p>
+<p>-AZ</p>
+<h2 id="small-string-snippets.">0. Small String Snippets.</h2>
+<p>Create a new folder named <code>string-indexing-and-methods</code>. Create a file named
+  <code>small-string-snippets.js</code> inside. Predict what the following code will print out:</p>
+<div class="sourceCode" id="cb1">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;promenade&quot;</span>[<span class="dv">3</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;tiger&quot;</span>[<span class="dv">1</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;wheel&quot;</span>.<span class="at">length</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;wheel&quot;</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;noMAD&quot;</span>.<span class="at">toUpperCase</span>())<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;hey programmers&quot;</span>[<span class="dv">2</span>] <span class="op">===</span> <span class="st">&quot;y&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;volleyball&quot;</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">20</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;treasure&quot;</span>.<span class="at">indexOf</span>(<span class="st">&quot;r&quot;</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;treasure&quot;</span>.<span class="at">indexOf</span>(<span class="st">&quot;e&quot;</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;web&quot;</span>[<span class="dv">5</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;red&quot;</span>.<span class="at">indexOf</span>(<span class="st">&quot;x&quot;</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;red&quot;</span>.<span class="at">indexOf</span>(<span class="st">&quot;R&quot;</span>))<span class="op">;</span></a></code></pre>
+</div>
+<p>Verify your predictions by writing the code to the <code>small-string-snippets.js</code> file. Don’t copy and paste;
+  type everything out manually. Run the code.</p>
+<h2 id="proper-patterns.">1. Proper Patterns.</h2>
+<p>Inside of the <code>string-indexing-and-methods</code> folder create another file named
+  <code>proper-patterns.js</code>. Predict what the following code will print out:</p>
+<div class="sourceCode" id="cb2">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">let</span> word <span class="op">=</span> <span class="st">&quot;suspension bridge&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="va">console</span>.<span class="at">log</span>(word[<span class="dv">4</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="va">word</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">5</span> <span class="op">&amp;&amp;</span> word[<span class="dv">0</span>] <span class="op">===</span> <span class="st">&quot;d&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="va">word</span>.<span class="at">length</span> <span class="op">&gt;</span> <span class="dv">5</span> <span class="op">&amp;&amp;</span> word[<span class="dv">0</span>] <span class="op">===</span> <span class="st">&quot;s&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="va">word</span>.<span class="at">indexOf</span>(<span class="st">&quot;o&quot;</span>) <span class="op">&gt;</span> <span class="dv">-1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="va">word</span>.<span class="at">indexOf</span>(<span class="st">&quot;z&quot;</span>) <span class="op">&gt;</span> <span class="dv">-1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7"></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="kw">let</span> str <span class="op">=</span> <span class="st">&quot;foggy&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="va">console</span>.<span class="at">log</span>(str[<span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="va">console</span>.<span class="at">log</span>(str[<span class="va">str</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-11" title="11">str <span class="op">=</span> <span class="st">&quot; day&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="va">console</span>.<span class="at">log</span>(str)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="va">console</span>.<span class="at">log</span>(<span class="va">str</span>.<span class="at">length</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="va">str</span>.<span class="at">indexOf</span>(<span class="st">&quot;ogg&quot;</span>))<span class="op">;</span></a></code></pre>
+</div>
+<p>Type the code. Don’t copy and paste. Run it. Check your predictions.</p>
+<h2 id="dare-to-decipher">2. Dare to Decipher?</h2>
+<p>Inside of the <code>string-indexing-and-methods</code> folder create another file named
+  <code>dare-to-decipher.js</code>. Predict what the following code will print out:</p>
+<div class="sourceCode" id="cb3">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">let</span> phrase <span class="op">=</span> <span class="st">&quot;that&#39;s all folks&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="va">console</span>.<span class="at">log</span>(phrase[<span class="va">phrase</span>.<span class="at">length</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="va">console</span>.<span class="at">log</span>(phrase[<span class="va">phrase</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="va">console</span>.<span class="at">log</span>(phrase[<span class="va">phrase</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">2</span>])<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="kw">const</span> i <span class="op">=</span> <span class="dv">9</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="kw">const</span> char <span class="op">=</span> phrase[i]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="va">console</span>.<span class="at">log</span>(char)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="va">phrase</span>.<span class="at">indexOf</span>(char))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="va">console</span>.<span class="at">log</span>(<span class="va">phrase</span>.<span class="at">slice</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">8</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-11" title="11"></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;abcdefg&quot;</span>.<span class="at">slice</span>(<span class="dv">1</span><span class="op">,</span> <span class="dv">3</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;abcdefg&quot;</span>.<span class="at">slice</span>(<span class="dv">2</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;abcdefg&quot;</span>.<span class="at">slice</span>(<span class="dv">4</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;abcdefg&quot;</span>.<span class="at">slice</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">-1</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;abcdefg&quot;</span>.<span class="at">slice</span>(<span class="dv">2</span><span class="op">,</span> <span class="dv">-2</span>))<span class="op">;</span></a></code></pre>
+</div>
+<p>Nice code. Run it.</p>
+<h2 id="a-tedious-task">3. A Tedious Task</h2>
+<p>Inside of the <code>string-indexing-and-methods</code> folder create another file named
+  <code>a-tedious-task.js</code>. Write the program so that it prints out the index where the substring <code>HEY</code>
+  can be found in the text below.</p>
+<pre
+  class="plaintext"><code>MIICWwIBAAKBgGEdLjFEFbegPZ2AwJWkalksXr7PzWL7wIc7pOFZxXwYPWtQxvANyceCwpkqbPLsfEx7nqxAris2hYOdeN1OTFqvTyNmVuzbUPcXShn6ZoDCB30voHkeu4F3cUw5RQEUDdLscSnv4HMxHam5qgl6vXoumVNHbjyKA5UtAnfjAgMBAAECgYAmjEyvpZTxRJvwjxDi1VaZevFI0Hd4WPH9PAGgqdnH84vGXnAGFj1WikqKYcqKMQW2kdjAsWwH9D9FfrkIcDDHdZ9XuGSGkFzWtOwajWMQl7qNV1hZ288gdpIQQMOTLDgauZY6pw1cV7h4v316qJB8knQGoBNpJCfTYQJBAKV1ctsJq0Zg4QumD2hyODepP3LfLeaQsERLqVAWeuOuTY5mK5gIwsSqvcSVfY7Ze1FWIsApNFRv67azKcJPwsCQQCNlyApZFJEVNY70Er7Uu5NL9t4CYJJC9uVVkoEHEY6d7sVslqa0vP2q0zXx9YedbMBvQjxXIbY0waXUy63FvoBGJAkB3OTJWUjVgzDY1Br5wu2Yu59NjKVKLWzCsu1gaCNBfhVDX7SyIyC9EYKRfUAoQxwsmPWPyQ9QVG4WKcPZJAkBRheAotPCBE2RLHHfvpiStnMhX0UXdVyaJp5tcZ6wYV61ohyBvCOkYhUxBJzeIGrVZcvLZSLeUzXoqRPpxQxAkEAkdCZXF0gHahpZgF5y0wWcqf9ECRT1E4Hv8bk3Mf0Exp2aW34JeI6I7Xqd1NV4I9H7prQ8m3y39lFwWO8PmQ</code></pre>
+<p>Fine. You can copy and paste, <em>this</em> time.</p>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>Watch the walkthrough in it’s entirety so you don’t miss out on any knowledge. Still watch the full walkthrough even
+  if you were able to complete this exercise easily, so you don’t miss any tips. Watch it in 1.5x speed if you like.</p>

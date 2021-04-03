@@ -1,0 +1,120 @@
+<h1 id="express-yourself">Express Yourself</h1>
+<p><em>Expressions</em> are the building blocks of programs. We can combine <em>values</em> with <em>operators</em> to
+  compose an expression. An <em>expression</em> evaluates to some <em>value</em>.</p>
+<p>Before you start this exercise, make sure you have watched the lecture first.</p>
+<ul>
+  <li><a href="https://youtu.be/NORcxNPVtg4">Lecture Part 1</a></li>
+  <li><a href="https://youtu.be/1y9DCzWYons">Lecture Part 2</a></li>
+</ul>
+<p>If you get stuck during this exercise, reference this walkthrough. Only watch enough of the walkthrough to get
+  yourself unstuck, then pause the video and pick up the exercise on your own.</p>
+<ul>
+  <li><a href="https://youtu.be/oMHa_c21sCw">Walkthrough</a></li>
+</ul>
+<p>The fundamentals of any skill aren’t particularly glamorous. We’ll learn the “cool” stuff when you are ready. Crawl.
+  Walk. Run.</p>
+<p>-AZ</p>
+<h2 id="hope-you-didnt-forget.">0. Hope you didn’t forget.</h2>
+<p>Create a new folder named <code>expressions-exercise</code>. Open it in VSCode. Create four files within this folder:
+  <code>string-expressions.js</code>, <code>number-expressions.js</code>, <code>boolean-expressions.js</code>,
+  <code>comparisons.js</code>.</p>
+<p>After creating these files, your folder structure should look like this:</p>
+<pre class="plaintext"><code>expressions-exercise/
+├── string-expressions.js
+├── number-expressions.js
+├── boolean-expressions.js
+└── comparisons.js</code></pre>
+<h2 id="stringing-together-some-expressions.">1. Stringing together some expressions.</h2>
+<p>Make a mental prediction of what the following expressions will print:</p>
+<div class="sourceCode" id="cb2">
+  <pre
+    class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;river&quot;</span> <span class="op">+</span> <span class="st">&quot;town&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;cat&quot;</span> <span class="op">+</span> <span class="st">&quot;dog&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;New&quot;</span> <span class="op">+</span> <span class="st">&quot; York&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;runner&#39;s knee&quot;</span> <span class="op">+</span> <span class="st">&quot;!&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;man&quot;</span> <span class="op">+</span> <span class="st">&quot;bear&quot;</span> <span class="op">+</span> <span class="st">&quot;pig&quot;</span>)<span class="op">;</span></a></code></pre>
+</div>
+<p>To check your prediction, write the code into <code>string-expressions.js</code> and run it in your terminal with
+  <code>node string-expressions.js</code>. Don’t copy and paste. Type everything manually. You should do this line by
+  line. This means you should type the first expression, run it. Add the second expression, run it, and so on. Don’t try
+  to type all five lines and then run it all at once. You will find it hard to pinpoint any typos if you do that.</p>
+<h2 id="dont-enjoy-math-too-bad.">2. Don’t enjoy math? Too bad.</h2>
+<p>Make predictions for what these number expressions evaluate to. Test your predictions by writing the code to
+  <code>number-expressions.js</code> and running it:</p>
+<div class="sourceCode" id="cb3">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">10</span> <span class="op">-</span> <span class="dv">15</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">4</span> <span class="op">+</span> <span class="dv">1</span> <span class="op">-</span> <span class="dv">5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">4</span> <span class="op">*</span> <span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">7</span> / <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">4</span> <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="va">console</span>.<span class="at">log</span>((<span class="dv">4</span> <span class="op">+</span> <span class="dv">2</span>) <span class="op">*</span> <span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">5</span> <span class="op">%</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-10" title="10"></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">6</span> <span class="op">%</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">7</span> <span class="op">%</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">8</span> <span class="op">%</span> <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">19</span> <span class="op">%</span> <span class="dv">8</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-15" title="15"></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">24</span> <span class="op">%</span> <span class="dv">8</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">7</span> <span class="op">%</span> <span class="dv">4</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-18" title="18"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">4</span> <span class="op">%</span> <span class="dv">7</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-19" title="19"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">5</span> <span class="op">+</span> (<span class="dv">10</span> <span class="op">%</span> <span class="dv">5</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-20" title="20"><span class="va">console</span>.<span class="at">log</span>((<span class="dv">5</span> <span class="op">+</span> <span class="dv">10</span>) <span class="op">%</span> <span class="dv">5</span>)<span class="op">;</span></a></code></pre>
+</div>
+<h2 id="shoutout-to-george-boole.">3. Shoutout to George Boole.</h2>
+<p>Make predictions for what these boolean expressions evaluate to. Test your predictions by writing the code to
+  <code>boolean-expressions.js</code> and running it:</p>
+<div class="sourceCode" id="cb4">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="op">!!</span><span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">&amp;&amp;</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">&amp;&amp;</span> <span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">true</span> <span class="op">&amp;&amp;</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">true</span> <span class="op">&amp;&amp;</span> <span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10"></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">||</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">||</span> <span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">true</span> <span class="op">||</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">true</span> <span class="op">||</span> <span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-15" title="15"></a>
+<a class="sourceLine" id="cb4-16" title="16"><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">false</span> <span class="op">||</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-17" title="17"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">||</span> (<span class="kw">true</span> <span class="op">&amp;&amp;</span> <span class="kw">true</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-18" title="18"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">||</span> <span class="op">!</span>(<span class="kw">true</span> <span class="op">&amp;&amp;</span> <span class="kw">true</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-19" title="19"><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">true</span> <span class="op">&amp;&amp;</span> (<span class="kw">false</span> <span class="op">||</span> <span class="kw">true</span>))<span class="op">;</span></a></code></pre>
+</div>
+<h2 id="drawing-a-comparison.">4. Drawing a Comparison.</h2>
+<p>Make predictions for what these comparison expressions evaluate to. Test your predictions by writing the code to
+  <code>comparisons.js</code> and running it:</p>
+<div class="sourceCode" id="cb5">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">true</span> <span class="op">===</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">===</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="va">console</span>.<span class="at">log</span>(<span class="kw">false</span> <span class="op">!==</span> <span class="kw">true</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">true</span> <span class="op">===</span> <span class="kw">false</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">===</span> <span class="dv">5</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">4</span> <span class="op">&lt;</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">10</span> <span class="op">&gt;=</span> <span class="dv">10</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="fl">10.3</span> <span class="op">&gt;=</span> <span class="dv">10</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-10" title="10"></a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">100</span> / <span class="dv">2</span> <span class="op">===</span> <span class="dv">50</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">100</span> <span class="op">%</span> <span class="dv">2</span> <span class="op">===</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">11</span> <span class="op">%</span> <span class="dv">2</span> <span class="op">===</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="fl">7.0</span> <span class="op">===</span> <span class="dv">7</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-15" title="15"></a>
+<a class="sourceLine" id="cb5-16" title="16"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">13</span> <span class="op">%</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">0</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-17" title="17"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;potato&quot;</span> <span class="op">===</span> <span class="st">&quot;potato&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-18" title="18"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tomato&quot;</span> <span class="op">===</span> <span class="st">&quot;tomato&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-19" title="19"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;42&quot;</span> <span class="op">===</span> <span class="dv">42</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-20" title="20"><span class="va">console</span>.<span class="at">log</span>(<span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">3</span> <span class="op">&amp;&amp;</span> <span class="dv">1</span> <span class="op">===</span> <span class="dv">0</span>)<span class="op">;</span></a></code></pre>
+</div>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>Watch the walkthrough in it’s entirety so you don’t miss out on any knowledge. Still watch the full walkthrough even
+  if you were able to complete this exercise easily, so you don’t miss any tips. Watch it in 1.5x speed if you like.</p>

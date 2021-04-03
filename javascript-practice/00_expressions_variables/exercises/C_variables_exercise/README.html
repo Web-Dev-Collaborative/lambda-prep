@@ -1,0 +1,103 @@
+<h1 id="very-able">Very Able</h1>
+<p><em>Variables</em> allow programmers to store values to be used later in their code. The value that a variable
+  contains can change throughout the runtime of a program.</p>
+<p>Before you start this exercise, make sure you have watched the lecture first.</p>
+<ul>
+  <li><a href="https://youtu.be/lmXRLpoyPic">Lecture</a></li>
+</ul>
+<p>If you get stuck during this exercise, reference this walkthrough. Only watch enough of the walkthrough to get
+  yourself unstuck, then pause the video and pick up the exercise on your own.</p>
+<ul>
+  <li><a href="https://youtu.be/T_xE-x0Eyqk">Walkthrough</a></li>
+</ul>
+<p>Ready?</p>
+<p>-AZ</p>
+<h2 id="do-you-speak-the-language">0. Do you speak the language?</h2>
+<p>Create a folder named <code>variables_exercise</code>. Create a file named <code>zero.js</code> inside of it. Predict
+  what the <code>console.log</code>s in the code below will print out:</p>
+<div class="sourceCode" id="cb1">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">let</span> location <span class="op">=</span> <span class="st">&quot;Brooklyn, &quot;</span> <span class="op">+</span> <span class="st">&quot;NY&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="va">console</span>.<span class="at">log</span>(location)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">let</span> quantity <span class="op">=</span> <span class="dv">4</span> <span class="op">*</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="va">console</span>.<span class="at">log</span>(quantity)<span class="op">;</span></a></code></pre>
+</div>
+<p>Test your predictions by typing the code into the <code>zero.js</code> file; don’t copy and paste. Run it to check
+  your guess.</p>
+<h2 id="whats-changed-what-hasnt">1. What’s changed? What hasn’t?</h2>
+<p>Create a new file named <code>one.js</code> inside of the <code>variables_exercise</code> folder. Predict what the
+  <code>console.log</code>s in the code below will print out:</p>
+<div class="sourceCode" id="cb2">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">let</span> word <span class="op">=</span> <span class="st">&quot;bye&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="va">console</span>.<span class="at">log</span>(word <span class="op">+</span> <span class="st">&quot; felicia&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="va">console</span>.<span class="at">log</span>(word)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="kw">let</span> num <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6">num <span class="op">=</span> num <span class="op">*</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="va">console</span>.<span class="at">log</span>(num)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="kw">let</span> bottlesOfBeer <span class="op">=</span> <span class="dv">99</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="kw">let</span> around <span class="op">=</span> bottlesOfBeer <span class="op">-</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="va">console</span>.<span class="at">log</span>(around)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="va">console</span>.<span class="at">log</span>(bottlesOfBeer)<span class="op">;</span></a></code></pre>
+</div>
+<p>Test your predictions by typing the code into the <code>one.js</code> file. Run it.</p>
+<h2 id="how-about-this">2. How about this?</h2>
+<p>Create a new file named <code>two.js</code> inside of the <code>variables_exercise</code> folder. Predict what the
+  <code>console.log</code>s in the code below will print out:</p>
+<div class="sourceCode" id="cb3">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">let</span> apple<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="va">console</span>.<span class="at">log</span>(apple)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4">apple <span class="op">=</span> <span class="dv">5</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="va">console</span>.<span class="at">log</span>(apple)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7">apple <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="va">console</span>.<span class="at">log</span>(apple)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10">apple <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="va">console</span>.<span class="at">log</span>(apple)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-12" title="12"></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="kw">let</span> banana <span class="op">=</span> apple<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="va">console</span>.<span class="at">log</span>(banana)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-15" title="15"></a>
+<a class="sourceLine" id="cb3-16" title="16">banana <span class="op">=</span> banana / <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="va">console</span>.<span class="at">log</span>(banana)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-18" title="18"></a>
+<a class="sourceLine" id="cb3-19" title="19"><span class="va">console</span>.<span class="at">log</span>(apple)<span class="op">;</span></a></code></pre>
+</div>
+<p>Test your predictions by typing the code into the <code>two.js</code> file. Run it.</p>
+<h2 id="did-you-forget-about-modulo">3. Did you forget about modulo?</h2>
+<p>Create a new file named <code>three.js</code> inside of the <code>variables_exercise</code> folder. Predict what the
+  <code>console.log</code>s in the code below will print out:</p>
+<div class="sourceCode" id="cb4">
+  <pre
+    class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">let</span> qty <span class="op">=</span> <span class="dv">15</span> <span class="op">%</span> <span class="dv">4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="va">console</span>.<span class="at">log</span>(qty)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">let</span> num <span class="op">=</span> <span class="dv">38</span> <span class="op">+</span> <span class="dv">3</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5">num<span class="op">++;</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="va">console</span>.<span class="at">log</span>(num <span class="op">+</span> <span class="st">&quot; is a great number&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-7" title="7"></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="kw">let</span> isNumEven <span class="op">=</span> num <span class="op">%</span> <span class="dv">2</span> <span class="op">===</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="va">console</span>.<span class="at">log</span>(num <span class="op">+</span> <span class="st">&quot; is even? &quot;</span> <span class="op">+</span> isNumEven)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10"></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="kw">let</span> isQtyEven <span class="op">=</span> qty <span class="op">%</span> <span class="dv">2</span> <span class="op">===</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="va">console</span>.<span class="at">log</span>(qty <span class="op">+</span> <span class="st">&quot; is even? &quot;</span> <span class="op">+</span> isQtyEven)<span class="op">;</span></a></code></pre>
+</div>
+<h2 id="so-you-can-code-but-do-you-have-good-taste-in-cinema">4. So you can code, but do you have good taste in cinema?
+</h2>
+<p>Create a new file named <code>four.js</code> inside of the <code>variables_exercise</code> folder. Create two
+  variables:</p>
+<ul>
+  <li><code>movie</code>, assigned to the string title of your favorite movie</li>
+  <li><code>views</code>, assigned to the number of times you watched that movie</li>
+</ul>
+<p>When executed, the program should print the message <code>I watched &lt;movie&gt; about &lt;views&gt; number of
+    times</code>.</p>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>Watch the walkthrough in it’s entirety so you don’t miss out on any knowledge. Still watch the full walkthrough even
+  if you were able to complete this exercise easily, so you don’t miss any tips. Watch it in 1.5x speed if you like.</p>
