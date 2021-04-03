@@ -2,7 +2,23 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="Author" content="Bryan Guner">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <!-- Site Meta -->
+      <meta name="description" content="Resource-sharing-hub">
+      <meta name="author" content="Bryan Guner">
+      <!-- Site Icons -->
+      <!-- Basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -13,7 +29,8 @@
 
   <body>
 
-    <body> <a href="https://github.com/bgoonz/lambda-prep" class="github-corner" aria-label="View source on Github"><svg
+    <body> <a target="_blank" rel="noopener noreferrer" href="https://github.com/bgoonz/lambda-prep"
+        class="github-corner" aria-label="View source on Github"><svg
           width="80" height="80" viewBox="0 0 250 250"
           style="z-index: 100000; fill:#194ccdaf; color:#fff; position: fixed; top: 20px; border: 0; left: 20px; transform: scale(-1.5, 1.5);"
           aria-hidden="true">
@@ -32,41 +49,67 @@
 
         <!-------------------------------------->
 
-        <center><a href="https://jolly-shannon-bbcd09.netlify.app/"><img
+        <center><a target="_blank" rel="noopener noreferrer" href="https://lambda-prep.netlify.app/"><img
               src="https://img.icons8.com/pastel-glyph/64/000000/home.png" /></a>HOME</a>
         </center>
 
 
         <!------------------------------------------->
-    <div class="sourceCode" id="cb1">
-      <pre
-        class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// snippet-5</span></a>
-<a class="sourceLine" id="cb1-2" title="2"></a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="kw">let</span> nums <span class="op">=</span> [<span class="dv">3</span><span class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">9</span>]<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-4" title="4"></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="kw">let</span> res1 <span class="op">=</span> <span class="va">nums</span>.<span class="at">reduce</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-6" title="6">  <span class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-7" title="7"><span class="op">}</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-8" title="8"></a>
-<a class="sourceLine" id="cb1-9" title="9"><span class="va">console</span>.<span class="at">log</span>(res1)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-10" title="10"></a>
-<a class="sourceLine" id="cb1-11" title="11"></a>
-<a class="sourceLine" id="cb1-12" title="12"><span class="kw">let</span> res2 <span class="op">=</span> <span class="va">nums</span>.<span class="at">reduce</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-13" title="13">  <span class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-14" title="14"><span class="op">},</span> <span class="dv">-10</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-15" title="15"></a>
-<a class="sourceLine" id="cb1-16" title="16"><span class="va">console</span>.<span class="at">log</span>(res2)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-17" title="17"></a>
-<a class="sourceLine" id="cb1-18" title="18"><span class="kw">let</span> res3 <span class="op">=</span> <span class="va">nums</span>.<span class="at">reduce</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-19" title="19">  <span class="cf">if</span> (b <span class="op">&lt;</span> a) <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-20" title="20">    <span class="cf">return</span> b<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-21" title="21">  <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-22" title="22">    <span class="cf">return</span> a<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-23" title="23">  <span class="op">}</span></a>
-<a class="sourceLine" id="cb1-24" title="24"><span class="op">}</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-25" title="25"></a>
-<a class="sourceLine" id="cb1-26" title="26"><span class="va">console</span>.<span class="at">log</span>(res3)<span class="op">;</span></a></code></pre>
-    </div>
-  </body>
+        <div class="sourceCode" id="cb1">
+          <pre
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb1-1" title="1"><span class="co">// snippet-5</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-2" title="2"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-3" title="3"><span
+                  class="kw">let</span> nums <span class="op">=</span> [<span class="dv">3</span><span
+                  class="op">,</span> <span class="dv">7</span><span class="op">,</span> <span class="dv">2</span><span
+                  class="op">,</span> <span class="dv">9</span>]<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-4" title="4"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-5" title="5"><span
+                  class="kw">let</span> res1 <span class="op">=</span> <span class="va">nums</span>.<span
+                  class="at">reduce</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-6" title="6"> <span
+                  class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-7" title="7"><span
+                  class="op">}</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-8" title="8"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-9" title="9"><span
+                  class="va">console</span>.<span class="at">log</span>(res1)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-10" title="10"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-11" title="11"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-12" title="12"><span
+                  class="kw">let</span> res2 <span class="op">=</span> <span class="va">nums</span>.<span
+                  class="at">reduce</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-13" title="13"> <span
+                  class="cf">return</span> a <span class="op">+</span> b<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-14" title="14"><span
+                  class="op">},</span> <span class="dv">-10</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-15" title="15"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-16" title="16"><span
+                  class="va">console</span>.<span class="at">log</span>(res2)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-17" title="17"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-18" title="18"><span
+                  class="kw">let</span> res3 <span class="op">=</span> <span class="va">nums</span>.<span
+                  class="at">reduce</span>(<span class="kw">function</span> (a<span class="op">,</span> b) <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-19" title="19"> <span
+                  class="cf">if</span> (b <span class="op">&lt;</span> a) <span class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-20" title="20"> <span
+                  class="cf">return</span> b<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-21" title="21"> <span
+                  class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-22" title="22"> <span
+                  class="cf">return</span> a<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-23" title="23"> <span
+                  class="op">}</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-24" title="24"><span
+                  class="op">}</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-25" title="25"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-26" title="26"><span
+                  class="va">console</span>.<span class="at">log</span>(res3)<span class="op">;</span></a></code></pre>
+        </div>
+    </body>
 
-  </html>
+</html>

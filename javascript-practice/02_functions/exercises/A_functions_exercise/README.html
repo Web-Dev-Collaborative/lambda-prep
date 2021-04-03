@@ -2,7 +2,23 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="Author" content="Bryan Guner">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <!-- Site Meta -->
+      <meta name="description" content="Resource-sharing-hub">
+      <meta name="author" content="Bryan Guner">
+      <!-- Site Icons -->
+      <!-- Basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -13,7 +29,8 @@
 
   <body>
 
-    <body> <a href="https://github.com/bgoonz/lambda-prep" class="github-corner" aria-label="View source on Github"><svg
+    <body> <a target="_blank" rel="noopener noreferrer" href="https://github.com/bgoonz/lambda-prep"
+        class="github-corner" aria-label="View source on Github"><svg
           width="80" height="80" viewBox="0 0 250 250"
           style="z-index: 100000; fill:#194ccdaf; color:#fff; position: fixed; top: 20px; border: 0; left: 20px; transform: scale(-1.5, 1.5);"
           aria-hidden="true">
@@ -32,7 +49,7 @@
 
         <!-------------------------------------->
 
-        <center><a href="https://jolly-shannon-bbcd09.netlify.app/"><img
+        <center><a target="_blank" rel="noopener noreferrer" href="https://lambda-prep.netlify.app/"><img
               src="https://img.icons8.com/pastel-glyph/64/000000/home.png" /></a>HOME</a>
         </center>
 
@@ -44,16 +61,17 @@
           unit. Functions may take <em>arguments</em> as input and return some value as output.</p>
         <p>Before you start this exercise, make sure you have watched the lecture first.</p>
         <ul>
-          <li><a href="https://youtu.be/g7fBqWTdeMw">Lecture</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/g7fBqWTdeMw">Lecture</a></li>
         </ul>
-        <p>If you get stuck during this exercise, reference this walkthrough. Only watch enough of the walkthrough to
           get
           yourself unstuck, then pause the video and pick up the exercise on your own.</p>
         <p>This is where we bring well defined structure to our code. If so far we’ve only learned the isolated “words”,
           “phrases”, and “sentences” of programming, we now turn our attention to the “paragraphs”.</p>
         <ul>
-          <li><a href="https://youtu.be/hS-p8ICd7Ek">Walkthrough Part 1</a></li>
-          <li><a href="https://youtu.be/pE9JYGobDQg">Walkthrough Part 2</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/hS-p8ICd7Ek">Walkthrough Part 1</a>
+          </li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://youtu.be/pE9JYGobDQg">Walkthrough Part 2</a>
+          </li>
         </ul>
         <p>-AZ</p>
         <h2 id="practice-how-to-read.">0. Practice how to read.</h2>
@@ -70,22 +88,45 @@
         </p>
         <div class="sourceCode" id="cb1">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// snippet 0-1</span></a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="kw">let</span> greet <span class="op">=</span> <span class="kw">function</span> () <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;hey&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;programmers&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="op">};</span></a>
-<a class="sourceLine" id="cb1-6" title="6"></a>
-<a class="sourceLine" id="cb1-7" title="7"><span class="kw">let</span> whistle <span class="op">=</span> <span class="kw">function</span> () <span class="op">{</span></a>
-<a class="sourceLine" id="cb1-8" title="8">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;doot&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-9" title="9"><span class="op">};</span></a>
-<a class="sourceLine" id="cb1-10" title="10"></a>
-<a class="sourceLine" id="cb1-11" title="11"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;first&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-12" title="12"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;second&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-13" title="13"><span class="at">greet</span>()<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;third&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-15" title="15"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;fourth&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-16" title="16"><span class="at">whistle</span>()<span class="op">;</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb1-1" title="1"><span class="co">// snippet 0-1</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-2" title="2"><span
+                  class="kw">let</span> greet <span class="op">=</span> <span class="kw">function</span> () <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-3" title="3"> <span
+                  class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;hey&quot;</span>)<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-4" title="4"> <span
+                  class="va">console</span>.<span class="at">log</span>(<span
+                  class="st">&quot;programmers&quot;</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-5" title="5"><span
+                  class="op">};</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-6" title="6"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-7" title="7"><span
+                  class="kw">let</span> whistle <span class="op">=</span> <span class="kw">function</span> () <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-8" title="8"> <span
+                  class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;doot&quot;</span>)<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-9" title="9"><span
+                  class="op">};</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-10" title="10"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-11" title="11"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;first&quot;</span>)<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-12" title="12"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;second&quot;</span>)<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-13" title="13"><span
+                  class="at">greet</span>()<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-14" title="14"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;third&quot;</span>)<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-15" title="15"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;fourth&quot;</span>)<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb1-16" title="16"><span
+                  class="at">whistle</span>()<span class="op">;</span></a></code></pre>
         </div>
         <p>Write the below code into a file named <code>snippet-0-2.js</code>. Make a prediction for what it will print.
           Run
@@ -93,21 +134,38 @@
         </p>
         <div class="sourceCode" id="cb2">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// snippet 0-2</span></a>
-<a class="sourceLine" id="cb2-2" title="2"><span class="kw">let</span> howMany <span class="op">=</span> <span class="kw">function</span> () <span class="op">{</span></a>
-<a class="sourceLine" id="cb2-3" title="3">  <span class="cf">return</span> <span class="dv">42</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="op">};</span></a>
-<a class="sourceLine" id="cb2-5" title="5"></a>
-<a class="sourceLine" id="cb2-6" title="6"><span class="va">console</span>.<span class="at">log</span>(howMany)<span class="op">;</span></a>
-<a class="sourceLine" id="cb2-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="at">howMany</span>())<span class="op">;</span></a>
-<a class="sourceLine" id="cb2-8" title="8"></a>
-<a class="sourceLine" id="cb2-9" title="9"><span class="kw">const</span> theAnswer <span class="op">=</span> <span class="at">howMany</span>()<span class="op">;</span></a>
-<a class="sourceLine" id="cb2-10" title="10"><span class="va">console</span>.<span class="at">log</span>(theAnswer)<span class="op">;</span></a>
-<a class="sourceLine" id="cb2-11" title="11"></a>
-<a class="sourceLine" id="cb2-12" title="12"><span class="kw">let</span> howMuch <span class="op">=</span> <span class="kw">function</span> () <span class="op">{</span></a>
-<a class="sourceLine" id="cb2-13" title="13">  <span class="dv">5</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb2-14" title="14"><span class="op">};</span></a>
-<a class="sourceLine" id="cb2-15" title="15"><span class="va">console</span>.<span class="at">log</span>(<span class="at">howMuch</span>())<span class="op">;</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb2-1" title="1"><span class="co">// snippet 0-2</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-2" title="2"><span
+                  class="kw">let</span> howMany <span class="op">=</span> <span class="kw">function</span> () <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-3" title="3"> <span
+                  class="cf">return</span> <span class="dv">42</span><span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-4" title="4"><span
+                  class="op">};</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-5" title="5"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(howMany)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-7" title="7"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">howMany</span>())<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-8" title="8"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-9" title="9"><span
+                  class="kw">const</span> theAnswer <span class="op">=</span> <span class="at">howMany</span>()<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-10" title="10"><span
+                  class="va">console</span>.<span class="at">log</span>(theAnswer)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-11" title="11"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-12" title="12"><span
+                  class="kw">let</span> howMuch <span class="op">=</span> <span class="kw">function</span> () <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-13" title="13"> <span
+                  class="dv">5</span><span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-14" title="14"><span
+                  class="op">};</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb2-15" title="15"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">howMuch</span>())<span
+                  class="op">;</span></a></code></pre>
         </div>
         <p>Write the below code into a file named <code>snippet-0-3.js</code>. Make a prediction for what it will print.
           Run
@@ -115,20 +173,44 @@
         </p>
         <div class="sourceCode" id="cb3">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// snippet 0-3</span></a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="kw">let</span> average <span class="op">=</span> <span class="kw">function</span> (num1<span class="op">,</span> num2) <span class="op">{</span></a>
-<a class="sourceLine" id="cb3-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;calculating...&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb3-4" title="4">  <span class="cf">return</span> (num1 <span class="op">+</span> num2) / <span class="dv">2</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="op">};</span></a>
-<a class="sourceLine" id="cb3-6" title="6"></a>
-<a class="sourceLine" id="cb3-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span class="dv">5</span><span class="op">,</span> <span class="dv">10</span>))<span class="op">;</span></a>
-<a class="sourceLine" id="cb3-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span class="dv">20</span><span class="op">,</span> <span class="dv">26</span>))<span class="op">;</span></a>
-<a class="sourceLine" id="cb3-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span class="dv">50</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">+</span> <span class="dv">2</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb3-10" title="10"></a>
-<a class="sourceLine" id="cb3-11" title="11"><span class="kw">let</span> a <span class="op">=</span> <span class="dv">21</span> <span class="op">+</span> <span class="dv">3</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb3-12" title="12"><span class="kw">let</span> b <span class="op">=</span> <span class="dv">20</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb3-13" title="13"><span class="kw">let</span> n <span class="op">=</span> <span class="at">average</span>(a<span class="op">,</span> b)<span class="op">;</span></a>
-<a class="sourceLine" id="cb3-14" title="14"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(n<span class="op">,</span> <span class="dv">18</span>))<span class="op">;</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb3-1" title="1"><span class="co">// snippet 0-3</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-2" title="2"><span
+                  class="kw">let</span> average <span class="op">=</span> <span class="kw">function</span> (num1<span
+                  class="op">,</span> num2) <span class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-3" title="3"> <span
+                  class="va">console</span>.<span class="at">log</span>(<span
+                  class="st">&quot;calculating...&quot;</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-4" title="4"> <span
+                  class="cf">return</span> (num1 <span class="op">+</span> num2) / <span class="dv">2</span><span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-5" title="5"><span
+                  class="op">};</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-6" title="6"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-7" title="7"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span
+                  class="dv">5</span><span class="op">,</span> <span class="dv">10</span>))<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-8" title="8"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span
+                  class="dv">20</span><span class="op">,</span> <span class="dv">26</span>))<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-9" title="9"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span
+                  class="dv">50</span><span class="op">,</span> <span class="dv">100</span>) <span class="op">+</span>
+                <span class="dv">2</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-10" title="10"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-11" title="11"><span
+                  class="kw">let</span> a <span class="op">=</span> <span class="dv">21</span> <span class="op">+</span>
+                <span class="dv">3</span><span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-12" title="12"><span
+                  class="kw">let</span> b <span class="op">=</span> <span class="dv">20</span><span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-13" title="13"><span
+                  class="kw">let</span> n <span class="op">=</span> <span class="at">average</span>(a<span
+                  class="op">,</span> b)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb3-14" title="14"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(n<span
+                  class="op">,</span> <span class="dv">18</span>))<span class="op">;</span></a></code></pre>
         </div>
         <p>Write the below code into a file named <code>snippet-0-4.js</code>. Make a prediction for what it will print.
           Run
@@ -136,17 +218,35 @@
         </p>
         <div class="sourceCode" id="cb4">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">// snippet 0-4</span></a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="kw">let</span> exclaim <span class="op">=</span> <span class="kw">function</span> (str) <span class="op">{</span></a>
-<a class="sourceLine" id="cb4-3" title="3">  <span class="kw">let</span> capitalized <span class="op">=</span> <span class="va">str</span>.<span class="at">toUpperCase</span>()<span class="op">;</span></a>
-<a class="sourceLine" id="cb4-4" title="4">  <span class="cf">return</span> capitalized <span class="op">+</span> <span class="st">&quot;!!&quot;</span><span class="op">;</span></a>
-<a class="sourceLine" id="cb4-5" title="5"><span class="op">};</span></a>
-<a class="sourceLine" id="cb4-6" title="6"></a>
-<a class="sourceLine" id="cb4-7" title="7"><span class="kw">let</span> result <span class="op">=</span> <span class="at">exclaim</span>(<span class="st">&quot;potato&quot;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb4-8" title="8"><span class="va">console</span>.<span class="at">log</span>(result)<span class="op">;</span></a>
-<a class="sourceLine" id="cb4-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="va">result</span>.<span class="at">length</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb4-10" title="10"><span class="va">console</span>.<span class="at">log</span>(result[<span class="dv">0</span>])<span class="op">;</span></a>
-<a class="sourceLine" id="cb4-11" title="11"><span class="va">console</span>.<span class="at">log</span>(result[<span class="va">result</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>])<span class="op">;</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb4-1" title="1"><span class="co">// snippet 0-4</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-2" title="2"><span
+                  class="kw">let</span> exclaim <span class="op">=</span> <span class="kw">function</span> (str) <span
+                  class="op">{</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-3" title="3"> <span
+                  class="kw">let</span> capitalized <span class="op">=</span> <span class="va">str</span>.<span
+                  class="at">toUpperCase</span>()<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-4" title="4"> <span
+                  class="cf">return</span> capitalized <span class="op">+</span> <span
+                  class="st">&quot;!!&quot;</span><span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-5" title="5"><span
+                  class="op">};</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-6" title="6"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-7" title="7"><span
+                  class="kw">let</span> result <span class="op">=</span> <span class="at">exclaim</span>(<span
+                  class="st">&quot;potato&quot;</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-8" title="8"><span
+                  class="va">console</span>.<span class="at">log</span>(result)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-9" title="9"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="va">result</span>.<span
+                  class="at">length</span>)<span class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-10" title="10"><span
+                  class="va">console</span>.<span class="at">log</span>(result[<span class="dv">0</span>])<span
+                  class="op">;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb4-11" title="11"><span
+                  class="va">console</span>.<span class="at">log</span>(result[<span class="va">result</span>.<span
+                  class="at">length</span> <span class="op">-</span> <span class="dv">1</span>])<span
+                  class="op">;</span></a></code></pre>
         </div>
         <h2 id="practice-how-to-write.">1. Practice how to write.</h2>
         <p>In this section of the exercise you’ll be prompted to write a function to accomplish a specific task. Read
@@ -160,77 +260,149 @@
         <p>Create an <code>is-div-by-4.js</code> file and solve the function below:</p>
         <div class="sourceCode" id="cb5">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">// Write a function `isDivBy4` that accepts a number as an argument. The function should return a</span></a>
-<a class="sourceLine" id="cb5-2" title="2"><span class="co">// boolean indicating whether or not the number is divisible by 4.</span></a>
-<a class="sourceLine" id="cb5-3" title="3"></a>
-<a class="sourceLine" id="cb5-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span class="dv">8</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb5-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span class="dv">12</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb5-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span class="dv">24</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb5-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span class="dv">9</span>))<span class="op">;</span> <span class="co">// false</span></a>
-<a class="sourceLine" id="cb5-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span class="dv">10</span>))<span class="op">;</span> <span class="co">// false</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb5-1" title="1"><span class="co">// Write a function `isDivBy4` that accepts a
+                  number as an argument. The function should return a</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-2" title="2"><span class="co">//
+                  boolean indicating whether or not the number is divisible by 4.</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-3" title="3"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-4" title="4"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span
+                  class="dv">8</span>))<span class="op">;</span> <span class="co">// true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-5" title="5"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span
+                  class="dv">12</span>))<span class="op">;</span> <span class="co">// true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span
+                  class="dv">24</span>))<span class="op">;</span> <span class="co">// true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-7" title="7"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span
+                  class="dv">9</span>))<span class="op">;</span> <span class="co">// false</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb5-8" title="8"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isDivBy4</span>(<span
+                  class="dv">10</span>))<span class="op">;</span> <span class="co">// false</span></a></code></pre>
         </div>
         <h3 id="keepitquiet">keepItQuiet</h3>
         <p>Create a <code>keep-it-quiet.js</code> file and solve the function below:</p>
         <div class="sourceCode" id="cb6">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="co">// Write a function `keepItQuiet` that accepts a string as an argument. The function should return the</span></a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="co">// lowercase version of the string with 3 periods added to the end of it.</span></a>
-<a class="sourceLine" id="cb6-3" title="3"></a>
-<a class="sourceLine" id="cb6-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">keepItQuiet</span>(<span class="st">&quot;HOORAY&quot;</span>))<span class="op">;</span> <span class="co">// &#39;hooray...&#39;</span></a>
-<a class="sourceLine" id="cb6-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">keepItQuiet</span>(<span class="st">&quot;Doggo&quot;</span>))<span class="op">;</span> <span class="co">// &#39;doggo...&#39;</span></a>
-<a class="sourceLine" id="cb6-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="at">keepItQuiet</span>(<span class="st">&quot;WHAT?!?!&quot;</span>))<span class="op">;</span> <span class="co">// &#39;what?!?!...&#39;</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb6-1" title="1"><span class="co">// Write a function `keepItQuiet` that accepts
+                  a string as an argument. The function should return the</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb6-2" title="2"><span class="co">//
+                  lowercase version of the string with 3 periods added to the end of it.</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb6-3" title="3"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb6-4" title="4"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">keepItQuiet</span>(<span
+                  class="st">&quot;HOORAY&quot;</span>))<span class="op">;</span> <span class="co">//
+                  &#39;hooray...&#39;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb6-5" title="5"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">keepItQuiet</span>(<span
+                  class="st">&quot;Doggo&quot;</span>))<span class="op">;</span> <span class="co">//
+                  &#39;doggo...&#39;</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb6-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">keepItQuiet</span>(<span
+                  class="st">&quot;WHAT?!?!&quot;</span>))<span class="op">;</span> <span class="co">//
+                  &#39;what?!?!...&#39;</span></a></code></pre>
         </div>
         <h3 id="islong">isLong</h3>
         <p>Create an <code>is-long.js</code> file and solve the function below:</p>
         <div class="sourceCode" id="cb7">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="co">// Write a function `isLong` that accepts a string as an argument. The function should return a boolean</span></a>
-<a class="sourceLine" id="cb7-2" title="2"><span class="co">// indicating whether or not the string is longer than 5 characters</span></a>
-<a class="sourceLine" id="cb7-3" title="3"></a>
-<a class="sourceLine" id="cb7-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span class="st">&quot;pie&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
-<a class="sourceLine" id="cb7-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span class="st">&quot;kite&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
-<a class="sourceLine" id="cb7-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span class="st">&quot;kitty&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
-<a class="sourceLine" id="cb7-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span class="st">&quot;telescope&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb7-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span class="st">&quot;thermometer&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb7-9" title="9"><span class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span class="st">&quot;restaurant&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb7-1" title="1"><span class="co">// Write a function `isLong` that accepts a
+                  string as an argument. The function should return a boolean</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-2" title="2"><span class="co">//
+                  indicating whether or not the string is longer than 5 characters</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-3" title="3"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-4" title="4"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span
+                  class="st">&quot;pie&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-5" title="5"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span
+                  class="st">&quot;kite&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span
+                  class="st">&quot;kitty&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-7" title="7"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span
+                  class="st">&quot;telescope&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-8" title="8"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span
+                  class="st">&quot;thermometer&quot;</span>))<span class="op">;</span> <span class="co">//
+                  true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb7-9" title="9"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">isLong</span>(<span
+                  class="st">&quot;restaurant&quot;</span>))<span class="op">;</span> <span class="co">//
+                  true</span></a></code></pre>
         </div>
         <h3 id="half">half</h3>
         <p>Create a <code>half.js</code> file and solve the function below:</p>
         <div class="sourceCode" id="cb8">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">// Write a function `half` that accepts a number as an argument. The function should return half of the</span></a>
-<a class="sourceLine" id="cb8-2" title="2"><span class="co">// number.</span></a>
-<a class="sourceLine" id="cb8-3" title="3"></a>
-<a class="sourceLine" id="cb8-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">half</span>(<span class="dv">8</span>))<span class="op">;</span> <span class="co">// 4</span></a>
-<a class="sourceLine" id="cb8-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">half</span>(<span class="dv">15</span>))<span class="op">;</span> <span class="co">// 7.5</span></a>
-<a class="sourceLine" id="cb8-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="at">half</span>(<span class="dv">90</span>))<span class="op">;</span> <span class="co">// 45</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb8-1" title="1"><span class="co">// Write a function `half` that accepts a
+                  number as an argument. The function should return half of the</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb8-2" title="2"><span class="co">//
+                  number.</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb8-3" title="3"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb8-4" title="4"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">half</span>(<span
+                  class="dv">8</span>))<span class="op">;</span> <span class="co">// 4</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb8-5" title="5"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">half</span>(<span
+                  class="dv">15</span>))<span class="op">;</span> <span class="co">// 7.5</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb8-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">half</span>(<span
+                  class="dv">90</span>))<span class="op">;</span> <span class="co">// 45</span></a></code></pre>
         </div>
         <h3 id="endswitht">endsWithT</h3>
         <p>Create an <code>endsWithT.js</code> file and solve the function below:</p>
         <div class="sourceCode" id="cb9">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="co">// Write a function `endsWithT` that accepts a string as an argument. The function should return a</span></a>
-<a class="sourceLine" id="cb9-2" title="2"><span class="co">// boolean indicating whether or not the string ends with the character &#39;t&#39;.</span></a>
-<a class="sourceLine" id="cb9-3" title="3"></a>
-<a class="sourceLine" id="cb9-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span class="st">&quot;smart&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb9-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span class="st">&quot;racket&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
-<a class="sourceLine" id="cb9-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span class="st">&quot;taco&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
-<a class="sourceLine" id="cb9-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span class="st">&quot;boomerang&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb9-1" title="1"><span class="co">// Write a function `endsWithT` that accepts a
+                  string as an argument. The function should return a</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb9-2" title="2"><span class="co">//
+                  boolean indicating whether or not the string ends with the character &#39;t&#39;.</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb9-3" title="3"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb9-4" title="4"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span
+                  class="st">&quot;smart&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb9-5" title="5"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span
+                  class="st">&quot;racket&quot;</span>))<span class="op">;</span> <span class="co">// true</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb9-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span
+                  class="st">&quot;taco&quot;</span>))<span class="op">;</span> <span class="co">// false</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb9-7" title="7"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">endsWithT</span>(<span
+                  class="st">&quot;boomerang&quot;</span>))<span class="op">;</span> <span class="co">//
+                  false</span></a></code></pre>
         </div>
         <h3 id="average">average</h3>
         <p>Create an <code>average.js</code> file and solve the function below:</p>
         <div class="sourceCode" id="cb10">
           <pre
-            class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="co">// Write a function `average` that accepts three numbers as arguments. The function should return the</span></a>
-<a class="sourceLine" id="cb10-2" title="2"><span class="co">// average of the three numbers.</span></a>
-<a class="sourceLine" id="cb10-3" title="3"></a>
-<a class="sourceLine" id="cb10-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span class="dv">3</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">8</span>))<span class="op">;</span> <span class="co">// 7</span></a>
-<a class="sourceLine" id="cb10-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span class="dv">10</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="dv">12</span>))<span class="op">;</span> <span class="co">// 9</span></a>
-<a class="sourceLine" id="cb10-6" title="6"><span class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span class="dv">6</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">40</span>))<span class="op">;</span> <span class="co">// 22</span></a></code></pre>
+            class="sourceCode js"><code class="sourceCode javascript"><a target="_blank" rel="noopener noreferrer"
+                class="sourceLine" id="cb10-1" title="1"><span class="co">// Write a function `average` that accepts
+                  three numbers as arguments. The function should return the</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb10-2" title="2"><span class="co">//
+                  average of the three numbers.</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb10-3" title="3"></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb10-4" title="4"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span
+                  class="dv">3</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span
+                  class="dv">8</span>))<span class="op">;</span> <span class="co">// 7</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb10-5" title="5"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span
+                  class="dv">10</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span
+                  class="dv">12</span>))<span class="op">;</span> <span class="co">// 9</span></a>
+              <a target="_blank" rel="noopener noreferrer" class="sourceLine" id="cb10-6" title="6"><span
+                  class="va">console</span>.<span class="at">log</span>(<span class="at">average</span>(<span
+                  class="dv">6</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span
+                  class="dv">40</span>))<span class="op">;</span> <span class="co">// 22</span></a></code></pre>
         </div>
-        <h2 id="walkthrough">Walkthrough</h2>
-        <p>Watch the walkthrough in it’s entirety so you don’t miss out on any knowledge. Still watch the full
-          walkthrough
           even
           if you were able to complete this exercise easily, so you don’t miss any tips. Watch it in 1.5x speed if you
           like.
