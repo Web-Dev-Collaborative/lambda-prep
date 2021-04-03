@@ -1,4 +1,4 @@
-i t// snippet 1-0
+i t // snippet 1-0
 let qty = 38;
 
 if ( qty > 30 && qty % 5 === 4 ) {
