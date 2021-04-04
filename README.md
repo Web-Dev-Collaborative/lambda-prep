@@ -30,7 +30,7 @@
 
 
 3.\) Pre-Course Work 
-
+[![Edit epic-hawking-rdij1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/epic-hawking-rdij1?autoresize=1&expanddevtools=1&fontsize=10&hidenavigation=1&theme=dark)
 
 ```
 .
@@ -597,7 +597,7 @@ easy to follow.
 
 "Simplicity is prerequisite for reliability." — Edsger W. Dijkstra
 
-## What you've learned
+## Remember
 
 - `console.log` can be used to print to the screen
 - using `//` at the front of a line will turn it into a comment; comments are
@@ -699,7 +699,7 @@ console.log(4 + 12 % 5); // => 6
 console.log((4 + 12) % 5); // => 1
 ```
 
-## What you've learned
+## Remember
 
 - The **Number** type is used to represent integer and decimal values
 - The operators `+`, `-`, `/`, `*` perform the normal math operations of
@@ -851,7 +851,7 @@ console.log("hello" + "world"); // => 'helloworld'
 console.log("goodbye" + " " + "moon"); // => 'goodbye moon'
 ```
 
-## What you've learned
+## Remember
 
 - a **String** is a data type that contains multiple characters enclosed in
   quotation marks
@@ -954,7 +954,7 @@ In other words, to correctly distribute `!` across parentheses, we must also fli
 
 We call this property **De Morgan's Law**. Shout out to Augustus De Morgan of Great Britain.
 
-## What you've learned
+## Remember
 
 * `!`, `&&`, `||` are the boolean operators that we can use to establish logic in our code
 * De Morgan's Law should be used to distribute `!` against parentheses
@@ -1038,7 +1038,7 @@ Whoa! Surprised by these results? It can be hard to predict how `==` behaves, so
 we will avoid using it in this course and as a best practice. Stick to using
 `===` because it respects data types.
 
-## What you've learned
+## Remember
 
 - `>`, `<`, `>=`,`<=`, `===`, and `!==` can be used to compare values
 - we prefer to use `===` to check for equality because it takes the type into
@@ -1180,7 +1180,7 @@ console.log(undefined + 3); // NaN
 console.log("fish" * 2); // NaN
 ```
 
-## What you've learned
+## Remember
 
 - variables are declared with `let` and will contain the value `undefined` by
   default
@@ -2262,7 +2262,7 @@ together. To concatenate arrays, we can use the aptly named `.concat` method:
 console.log([1, 2, 3].concat([4, 5, 6])); // => [1, 2, 3, 4, 5, 6]
 ```
 
-## What you've learned
+## Remember
 
 - An **Array** is a data type that contains a list of in order values surrounded
   in square brackets `[]`.
@@ -2412,7 +2412,7 @@ store and use as we please.
 > assignment is complete, it would be silly to refer to `myFunc` as an
 > `anonymous function` because an _anonymous function_ has no name.
 
-## What you've learned
+## Remember
 
 - functions can be stored in variables; just like any other values in
   JavaScript!
@@ -2512,7 +2512,7 @@ useful in your future projects. Imagine how'd you represent a "grid":
 - sudoku (9x9 grid)
 - excel (a sheet is an arbitrarily sized 2D array)
 
-## What you've learned
+## Remember
 
 - an array can contain arrays as elements, we call this a 2D arrays
 - to iterate through a 2D array, used nested loops
@@ -2615,7 +2615,7 @@ the assignment evaluates first, we are simply taking the new number of `50` and
 reassigning it to the `myNum` variable. This reassignment of a variable name is
 not a mutation of the original number.
 
-## What you've learned
+## Remember
 
 - data types that can be changed are mutable, those that cannot be changed are
   immutable
@@ -2707,7 +2707,7 @@ Bam. What a versatile method! Always feel free to reference the
 [documentation][mdn-splice] for the method when you are struggling to remember
 its usage:
 
-## What you've learned
+## Remember
 
 - Array#splice has two required arguments
   - the target index
@@ -2801,7 +2801,7 @@ This means that the `split` will cut the string wherever there is an 'I',
 leaving a gap where the 'I's were. Then, the `join` will fill those gaps with
 'we's.
 
-## What you've learned
+## Remember
 
 - we can use `String#split` and `Array#join` to convert between strings and
   arrays
@@ -2924,7 +2924,7 @@ function reverseTheSentence(sentence) {
 }
 ```
 
-## What you've seen
+## Remember
 
 This article has shown you two ways to determine if a value is a kind of type:
 
@@ -3170,7 +3170,7 @@ function whatIsThis() {
 }
 ```
 
-## What you've learned
+## Remember
 
 There is a special value in JavaScript represented as `null` which means "no
 value" or "unknown value". It is the only value of the Null data type. You can

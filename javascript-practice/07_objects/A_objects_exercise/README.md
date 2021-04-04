@@ -201,6 +201,6 @@ console.log(maxObjectValue({ lychee: 11, rambutan: 13, papaya: 9 })); // ['rambu
 
 ## Walkthrough
 
-Watch the walkthrough in it's entirety so you don't miss out on any knowledge. Still watch the full
-walkthrough even if you were able to complete this exercise easily, so you don't miss any tips.
-Watch it in 1.5x speed if you like.
+ 
+
+

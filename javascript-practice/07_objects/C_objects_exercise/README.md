@@ -97,6 +97,6 @@ console.log(secretCipher("lantern", { e: "o", l: "p", n: "m", r: "j" })); // 'p?
 
 ## Walkthrough
 
-Watch the walkthrough in it's entirety so you don't miss out on any knowledge. Still watch the full
-walkthrough even if you were able to complete this exercise easily, so you don't miss any tips.
-Watch it in 1.5x speed if you like.
+ 
+
+

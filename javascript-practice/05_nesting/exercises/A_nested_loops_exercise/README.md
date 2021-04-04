@@ -173,6 +173,6 @@ console.log(twoSum([6, 5, 1], 10)); // false
 
 ## Walkthrough
 
-Watch the walkthrough in it's entirety so you don't miss out on any knowledge. Still watch the full
-walkthrough even if you were able to complete this exercise easily, so you don't miss any tips.
-Watch it in 1.5x speed if you like.
+ 
+
+

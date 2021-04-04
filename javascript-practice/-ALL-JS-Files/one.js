@@ -1,47 +1,12 @@
-i t // snippet 1-0
-let qty = 38;
+let word = "bye";
+console.log( word + " felicia" ); // 'bye felicia'
+console.log( word ); // 'bye'
 
-if ( qty > 30 && qty % 5 === 4 ) {
-  console.log( "swish" );
-} else {
-  console.log( "swoosh" ); // prints
-}
+let num = 10;
+num = num * 2;
+console.log( num ); // 20
 
-if ( qty > 0 ) {
-  console.log( "pos" ); // prints
-}
-
-// snippet 1-1
-let a = "celery";
-let b = "SQUASH";
-
-if ( a === a.toUpperCase() ) {
-  console.log( "alpha" );
-}
-
-if ( b === b.toUpperCase() ) {
-  console.log( "beta" ); // prints
-}
-
-
-// snippet 1-2
-let number = 9;
-
-if ( number > 4 ) {
-  console.log( "ding" ); // prints
-} else if ( number % 3 === 0 ) {
-  console.log( "dong" );
-}
-
-
-
-// snippet 1-3
-let z = 12;
-
-if ( z > 10 ) {
-  console.log( "vroom" ); // prints
-}
-
-if ( z % 3 === 0 ) {
-  console.log( "skrrt" ); // prints
-}
+let bottlesOfBeer = 99;
+let around = bottlesOfBeer - 1;
+console.log( around ); // 98
+console.log( bottlesOfBeer ); // 99

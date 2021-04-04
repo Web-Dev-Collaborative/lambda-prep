@@ -1,15 +1,20 @@
 // snippet 4
-let locations = [ "flatbush", "williamsburg", "bushwick", "greenpoint" ];
-
-for ( let i = 0; i < locations.length; i++ ) {
-  for ( let j = i + 1; j < locations.length; j++ ) {
-    console.log( locations[ i ], locations[ j ] );
-  }
+let word = "street";
+for ( let i = 0; i < word.length; i++ ) {
+  console.log( i );
+  console.log( word[ i ] );
 }
 
-// flatbush williamsburg
-// flatbush bushwick
-// flatbush greenpoint
-// williamsburg bushwick
-// williamsburg greenpoint
-// bushwick greenpoint
+
+// 0
+// s
+// 1
+// t
+// 2
+// r
+// 3
+// e
+// 4
+// e
+// 5
+// t

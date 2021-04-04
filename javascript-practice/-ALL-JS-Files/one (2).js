@@ -1,5 +1,5 @@
 let word = "bye";
-console.log( word + " felicia" ); // 'bye felicia'
+console.log( `${word} felicia` ); // 'bye felicia'
 console.log( word ); // 'bye'
 
 let num = 10;
