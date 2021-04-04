@@ -6,6 +6,19 @@
 
 0.\) Links:
 
+
+
+[HTML TAG EXAMPLES](./one-of-every-tag.html)
+[Navigation](./directory.html)
+[Playground](https://code-playground.netlify.app/) 
+[Quiz Me](https://web-dev-interview-prep-quiz-website.netlify.app/)
+[Text-Tools](https://devtools42.netlify.app/) 
+[Github HTML FilePreviewer](https://githtmlpreview.netlify.app/)[simple-sidebar-template](./_Resources\simple-side-bar\directory.html)
+[My Blog Posts](https://bryanguner.medium.com/)
+
+
+
+
 | Name      | Hyperlink                                                                                                                                                                                                               |
 | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | OKTA      | [https://lambdaschoolsso.okta.com/login/login.htm?fromURI=%2Fapp%2FUserHome](https://lambdaschoolsso.okta.com/login/login.htm?fromURI=%2Fapp%2FUserHome)                                                                |
