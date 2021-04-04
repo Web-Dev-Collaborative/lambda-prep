@@ -1,7 +1,7 @@
 # Prep-Work
 
 ## [deployment](https://60637489113cfe1345c7fcf9--jolly-shannon-bbcd09.netlify.app/)
-
+## [GitHub Pages](https://bgoonz.github.io/lambda-prep/)
 ## [Backup-Deployment:](https://bgoonz-c1f6696402.drafts.github.io/lambda-prep/)
 
 0.\) Links:
