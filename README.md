@@ -35,12 +35,7 @@
 
 
 
-1.\)  Platforms we need while attending class:
-
-
-
-2.\) Web Development Software:
-
+![google-analytics](./analytics.PNG)
 
 
 3.\) Pre-Course Work 
