@@ -29,7 +29,7 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-simple-sidebar.git"
     },
     "dependencies": {
-        "bootstrap": "5.0.1",
+        "bootstrap": "5.3.3",
         "jquery": "3.6.0"
     },
     "devDependencies": {
